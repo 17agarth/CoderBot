@@ -1,0 +1,30 @@
+{
+  "name": "coderbot",
+  "version": "1.0.0",
+  "description": "A Discord bot for CoderBook's Discord Server",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "eslint . --ext .js,.ts && tsc",
+    "start": "node dist/main.js",
+    "test": "concurrently \"tsc -w\" \"nodemon dist/main.js\"",
+    "lint": "eslint . --ext .js,.ts"
+  },
+  "author": "CoderBook <17agarth@gmail.com> (https://github.com/17agarth)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/17agarth/CoderBot/issues"
+  },
+  "homepage": "https://github.com/17agarth/CoderBot#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "concurrently": "^4.1.2",
+    "eslint": "^6.4.0",
+    "nodemon": "^1.19.2",
+    "typescript": "^3.6.3"
+  }
+}
